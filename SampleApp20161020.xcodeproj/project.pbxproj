@@ -207,8 +207,7 @@
 				TargetAttributes = {
 					B6ABCFF01DB7E29400860AE1 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = B8PR34D6DP;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B6ABD0091DB7E29400860AE1 = {
 						CreatedOnToolsVersion = 8.0;
@@ -427,10 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B8PR34D6DP;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SampleApp20161020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.SampleApp20161020;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -439,11 +438,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = B8PR34D6DP;
 				INFOPLIST_FILE = SampleApp20161020/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.SampleApp20161020;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f9e859c7-68f0-4761-ad19-61fc1f13b957";
+				PROVISIONING_PROFILE_SPECIFIER = "SampleApp20161020 Ad-Hoc";
 			};
 			name = Release;
 		};
@@ -497,6 +499,178 @@
 			};
 			name = Release;
 		};
+		B6ABD0271DB7E39A00860AE1 /* Debug_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug_ENCRYPTED;
+		};
+		B6ABD0281DB7E39A00860AE1 /* Debug_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"DEBUG_ENCRYPTED=1",
+				);
+				INFOPLIST_FILE = SampleApp20161020/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.SampleApp20161020;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug_ENCRYPTED;
+		};
+		B6ABD0291DB7E39A00860AE1 /* Debug_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = SampleApp20161020Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp20161020.app/SampleApp20161020";
+			};
+			name = Debug_ENCRYPTED;
+		};
+		B6ABD02A1DB7E39A00860AE1 /* Debug_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = SampleApp20161020UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SampleApp20161020;
+			};
+			name = Debug_ENCRYPTED;
+		};
+		B6ABD02B1DB7E3ED00860AE1 /* Release_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release_ENCRYPTED;
+		};
+		B6ABD02C1DB7E3ED00860AE1 /* Release_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE_ENCRYPTED=1";
+				INFOPLIST_FILE = SampleApp20161020/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.SampleApp20161020;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f9e859c7-68f0-4761-ad19-61fc1f13b957";
+				PROVISIONING_PROFILE_SPECIFIER = "SampleApp20161020 Ad-Hoc";
+			};
+			name = Release_ENCRYPTED;
+		};
+		B6ABD02D1DB7E3ED00860AE1 /* Release_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = SampleApp20161020Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleApp20161020.app/SampleApp20161020";
+			};
+			name = Release_ENCRYPTED;
+		};
+		B6ABD02E1DB7E3ED00860AE1 /* Release_ENCRYPTED */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = SampleApp20161020UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = B8PR34D6DP.jp.yuoku.SampleApp20161020UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SampleApp20161020;
+			};
+			name = Release_ENCRYPTED;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,7 +678,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6ABD01C1DB7E29400860AE1 /* Debug */,
+				B6ABD0271DB7E39A00860AE1 /* Debug_ENCRYPTED */,
 				B6ABD01D1DB7E29400860AE1 /* Release */,
+				B6ABD02B1DB7E3ED00860AE1 /* Release_ENCRYPTED */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -513,25 +689,34 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6ABD01F1DB7E29400860AE1 /* Debug */,
+				B6ABD0281DB7E39A00860AE1 /* Debug_ENCRYPTED */,
 				B6ABD0201DB7E29400860AE1 /* Release */,
+				B6ABD02C1DB7E3ED00860AE1 /* Release_ENCRYPTED */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6ABD0211DB7E29400860AE1 /* Build configuration list for PBXNativeTarget "SampleApp20161020Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6ABD0221DB7E29400860AE1 /* Debug */,
+				B6ABD0291DB7E39A00860AE1 /* Debug_ENCRYPTED */,
 				B6ABD0231DB7E29400860AE1 /* Release */,
+				B6ABD02D1DB7E3ED00860AE1 /* Release_ENCRYPTED */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6ABD0241DB7E29400860AE1 /* Build configuration list for PBXNativeTarget "SampleApp20161020UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6ABD0251DB7E29400860AE1 /* Debug */,
+				B6ABD02A1DB7E39A00860AE1 /* Debug_ENCRYPTED */,
 				B6ABD0261DB7E29400860AE1 /* Release */,
+				B6ABD02E1DB7E3ED00860AE1 /* Release_ENCRYPTED */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
